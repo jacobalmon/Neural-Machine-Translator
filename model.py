@@ -21,3 +21,9 @@ class Encoder(nn.Module):
         outputs, (hidden, cell) = self.rnn(embedded)
 
         return hidden, cell
+    
+class Decoder(nn.Module):
+    def __init__(self, output_dim, embedded_dim, hidden_dim, num_layers, dropout):
+        super().__init__()
+        pass
+
