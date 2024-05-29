@@ -9,7 +9,7 @@ from utility import load_data, train, evaluate, translate_sentence
 # Setting a Random Seed.
 seed = 1234
 random.seed(seed)
-torch.manual_speed(seed)
+torch.manual_seed(seed)
 torch.backends.cudnn.deterministic = True
 
 # Loading Data.
